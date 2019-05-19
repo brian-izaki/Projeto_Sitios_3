@@ -1,6 +1,6 @@
 .template-header{
     background-image: url(../../images/partitura-fundo.jpg);
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,6 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
     text-align: center;
+}
+
+.bgNav-header{
+    background-color: #ACA2A5;
+    color: #342B31;
 }
