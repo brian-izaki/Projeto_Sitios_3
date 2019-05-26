@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/generics/reset.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/components/componentsHeader.css">
-    <link rel="stylesheet" href="./css/objects/objectsHeader.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/components/headerComponents.css">
+    <link rel="stylesheet" href="./css/objects/headerObjects.css">
+    <link rel="stylesheet" href="./css/components/mainComponets.css">
+    <link rel="stylesheet" href="./css/objects/mainObjects.css">
 
     <title>Music Template</title>
 </head>
@@ -21,6 +23,7 @@
             <h1 id="home">Info Musics</h1>
         </div>
         <!-- Barra de menus do site -->
+        <!-- se quiser deixar algo no canto esquerdo utilizar o ml-auto -->
         <nav class="navbar navbar-light justify-content-center bg-light">
             <a class="nav-item navbar-brand" href="#">Home</a>
             <a class="nav-item nav-link" href="#t1">Features</a>
@@ -28,7 +31,6 @@
             <a class="nav-item nav-link" href="#t3">Disabled</a>
             <!-- <div class="navbar-nav">
             </div> -->
-
         </nav>
         <!-- Texto no meio do header -->
         <div class="content-header">
@@ -42,24 +44,37 @@
     </header>
 
     <main>
-        <div>
+        <section>
             <h1 id="t1">Titulo1</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nulla vel asperiores, adipisci repellat
                 dolor praesentium ratione cum eligendi reprehenderit soluta, quaerat illum aliquam, quas non possimus
                 sed eveniet voluptatem?</p>
-        </div>
-        <div>
-            <h1 id="t2">Titulo2</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nulla vel asperiores, adipisci repellat
-                dolor praesentium ratione cum eligendi reprehenderit soluta, quaerat illum aliquam, quas non possimus
-                sed eveniet voluptatem?</p>
-        </div>
-        <div>
+        </section>
+
+        <section id="formCadastro" class="content-main">
+            
+            <h1 id="t2">Seja um colaborador</h1>
+            <form action="" class="form-main">
+                <label for="fNome"> Nome: </label>
+                <input type="text" id="fNome" name="txtNome" placeholder="Ex: Samaritano" required>
+                <br>
+                <label for="fTelefone"> Telefone: </label>
+                <input type="text" id="fTelefone" name="txtTelefone" placeholder="Ex: (XX)xxxxx-xxxx" required>
+                <br>
+                <label for="fEmail"> Email: </label>
+                <input type="text" id="fEmail" name="txtEmail" placeholder="Ex: nome@email.com" required>
+
+                <input type="button" value="Enviar">
+
+            </form>
+        </section>
+
+        <section>
             <h1 id="t3">Titulo3</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nulla vel asperiores, adipisci repellat
                 dolor praesentium ratione cum eligendi reprehenderit soluta, quaerat illum aliquam, quas non possimus
                 sed eveniet voluptatem?</p>
-        </div>
+        </section>
     </main>
 
     <footer></footer>
