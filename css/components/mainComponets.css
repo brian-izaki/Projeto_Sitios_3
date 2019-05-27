@@ -1,0 +1,19 @@
+.app-main {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: ;
+}
+
+.cards-main {
+  
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+}
