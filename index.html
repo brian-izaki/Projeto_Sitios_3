@@ -19,6 +19,20 @@
 
 <body>
     <header class="template-header">
+        <section class="acessibilidade-header ">
+            <div class="acessibilidade-atalhos">
+                <a class="none-decoration cor-acessivel" href="#menu"> Ir para menus </a>
+                <a class="none-decoration cor-acessivel" href="#"> Ir para opção de aumentar fonte</a>
+                <a class="none-decoration cor-acessivel" href="#"> Ir para opção de apresentar libras</a>
+            </div>
+
+            <div class="aumentarFonte">
+                <a href="#" id="minusculo"> <img class="imagem-letra" src="./images/letra-p.png" alt="Diminuir fonte"></a>
+                <a href="#" id="maiusculo"> <img class="imagem-letra" src="./images/letra.png" alt="Aumentar fonte"></a>
+            </div>
+
+
+        </section>
         <!-- Nome do site -->
         <div class="text-center title-header">
 
@@ -26,11 +40,11 @@
         </div>
         <!-- Barra de menus do site -->
         <!-- se quiser deixar algo no canto esquerdo utilizar o ml-auto -->
-        <nav class="navbar navbar-light justify-content-center bg-light">
-            <a class="nav-item navbar-brand" href="#">Home</a>
+        <nav id="menu" class="navbar navbar-light justify-content-center bg-light">
+            <a class="nav-item navbar-brand" href="#home">Home</a>
             <a class="nav-item nav-link" href="#conteúdo">Conteúdo</a>
-            <a class="nav-item nav-link" href="#t2">Pricing</a>
-            <a class="nav-item nav-link" href="#t3">Disabled</a>
+            <a class="nav-item nav-link" href="#junte">Junte-se a nós</a>
+            <a class="nav-item nav-link" href="#t3">Texto 3</a>
             <!-- <div class="navbar-nav">
             </div> -->
         </nav>
@@ -46,11 +60,12 @@
     </header>
 
     <main class="app-main">
-        <section class="content">
-            <h1 id="conteúdo" class="titulo">Postagens Rescentes</h1>
-            <section class="cards-main">
 
-                <div class="card-main">
+        <section class="">
+
+            <section class="cards-main row">
+
+                <div class="card-main col">
                     <div>
                         <img class="card-photo" src="images/guitarra.jpg" alt="Imagem de uma guitarra">
                     </div>
@@ -60,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="card-main">
+                <div class="card-main col">
                     <div>
                         <img class="card-photo" src="images/violino1.jpg" alt="Imagem de uma guitarra">
                     </div>
@@ -70,7 +85,7 @@
                     </div>
                 </div>
 
-                <div class="card-main">
+                <div class="card-main col">
                     <div>
                         <img class="card-photo" src="images/piano1.jpg" alt="Imagem de uma guitarra">
                     </div>
@@ -80,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="card-main">
+                <div class="card-main col">
                     <div>
                         <img class="card-photo" src="images/piano2.jpg" alt="Imagem de uma guitarra">
                     </div>
@@ -96,7 +111,7 @@
         <section id="formCadastro" class="content-main">
 
             <h1 id="t2">Seja um colaborador</h1>
-            <form action="" class="form-main">
+            <form action="GET" class="form-main">
                 <label for="fNome"> Nome: </label>
                 <input type="text" id="fNome" name="txtNome" placeholder="Ex: Samaritano" required>
                 <br>
@@ -105,7 +120,7 @@
                 <br>
                 <label for="fEmail"> Email: </label>
                 <input type="text" id="fEmail" name="txtEmail" placeholder="Ex: nome@email.com" required>
-
+                <br>
                 <input type="button" value="Enviar">
 
             </form>
