@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/trumps/helpers.css">
     <link rel="stylesheet" href="./css/generics/reset.css">
+    <link rel="stylesheet" href="./css/trumps/helpers.css">
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/components/headerComponents.css">
     <link rel="stylesheet" href="./css/objects/headerObjects.css">
     <link rel="stylesheet" href="./css/components/mainComponets.css">
     <link rel="stylesheet" href="./css/objects/mainObjects.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Music Template</title>
 </head>
@@ -27,7 +29,8 @@
             </div>
 
             <div class="aumentarFonte">
-                <a href="#" id="minusculo"> <img class="imagem-letra" src="./images/letra-p.png" alt="Diminuir fonte"></a>
+                <a href="#" id="minusculo"> <img class="imagem-letra" src="./images/letra-p.png"
+                        alt="Diminuir fonte"></a>
                 <a href="#" id="maiusculo"> <img class="imagem-letra" src="./images/letra.png" alt="Aumentar fonte"></a>
             </div>
 
@@ -61,52 +64,95 @@
 
     <main class="app-main">
 
-        <section class="">
+                <section class="swiper-container">
+                    <h3>Alguns Instrumentos Músicais:</h3>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="./images/piano1.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>John Doe<br><span>Web Designer</span></h3>
+                            </div>
+                        </div>
 
-            <section class="cards-main row">
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="./images/piano2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>John Doe<br><span>Web Designer</span></h3>
+                            </div>
+                        </div>
 
-                <div class="card-main col">
-                    <div>
-                        <img class="card-photo" src="images/guitarra.jpg" alt="Imagem de uma guitarra">
-                    </div>
-                    <div class="texto-card">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="./images/piano2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>John Doe<br><span>Web Designer</span></h3>
+                            </div>
+                        </div>
 
-                <div class="card-main col">
-                    <div>
-                        <img class="card-photo" src="images/violino1.jpg" alt="Imagem de uma guitarra">
-                    </div>
-                    <div class="texto-card">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="./images/piano3.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>John Doe<br><span>Web Designer</span></h3>
+                            </div>
+                        </div>
 
-                <div class="card-main col">
-                    <div>
-                        <img class="card-photo" src="images/piano1.jpg" alt="Imagem de uma guitarra">
-                    </div>
-                    <div class="texto-card">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="./images/piano3.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>John Doe<br><span>Web Designer</span></h3>
+                            </div>
+                        </div>
 
-                <div class="card-main col">
-                    <div>
-                        <img class="card-photo" src="images/piano2.jpg" alt="Imagem de uma guitarra">
-                    </div>
-                    <div class="texto-card">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="./images/piano3.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>John Doe<br><span>Web Designer</span></h3>
+                            </div>
+                        </div>
 
-            </section>
-        </section>
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="./images/piano2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>John Doe<br><span>Web Designer</span></h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="./images/violao1.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>John Doe<br><span>Web Designer</span></h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="./images/violino1.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>John Doe<br><span>Web Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </section>
+
 
         <section id="formCadastro" class="content-main">
 
@@ -135,8 +181,10 @@
     </main>
 
     <footer></footer>
-
+   <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+<script src="./js/function.js"></script>
 </body>
 <!--Commit-->
 
