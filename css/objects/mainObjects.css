@@ -6,6 +6,7 @@
     align-items: center;
     /* border: 2px solid black; teste */
     box-shadow: 0 0 5px;
+    grid-column: 2/4;
 
 }
 

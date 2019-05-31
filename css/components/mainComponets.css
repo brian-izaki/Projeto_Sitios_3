@@ -8,12 +8,12 @@
 
 .content{
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: 20px auto 20px 20px;
+    grid-template-rows: auto auto;
 }
 
 .cards-main {
   
   padding: 30px;
-  display: flex;
-  flex-direction: row;
+  
 }

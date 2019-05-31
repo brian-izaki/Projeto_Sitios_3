@@ -1,3 +1,19 @@
+.acessibilidade-header{
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+.acessibilidade-atalhos{
+    display: flex;
+    flex-direction: column;
+}
+
+.aumentarFonte{
+    
+}
+
 .template-header{
     background-image: url(../../images/partitura-fundo.jpg);
     background-attachment: fixed;
