@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./css/objects/mainObjects.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/fontawesome-free-5.8.2-web/css/fontawesome.min.css">
 
     <title>Music Template</title>
     <style>
@@ -30,9 +29,11 @@
     <header class="template-header">
         <section class="acessibilidade-header">
             <div class="acessibilidade-atalhos">
-                <a class="none-decoration cor-acessivel" href="#menu"> Ir para menus </a>
                 <a class="none-decoration cor-acessivel" href="#baixaVisao"> Ir para aumentar fonte</a>
-                <a class="none-decoration cor-acessivel" href="#"> Ir para alterar contraste</a>
+                <a class="none-decoration cor-acessivel" href="#contraste"> Ir para alterar contraste</a>
+                <a class="none-decoration cor-acessivel" href="#menu"> Ir para menu </a>
+                <a class="none-decoration cor-acessivel" href="#cards"> Ir para instrumentos musicais</a>
+                <a class="none-decoration cor-acessivel" href="#"> Ir para formulário de cadastro</a>
             </div>
 
             <div id="baixaVisao" class="aumentarFonte">
@@ -58,9 +59,9 @@
         <!-- se quiser deixar algo no canto esquerdo utilizar o ml-auto -->
         <nav id="menu" class="navbar navbar-light justify-content-center bg-light contrastejs">
             <a class="nav-item navbar-brand" href="#home">Home</a>
-            <a class="nav-item nav-link" href="#conteúdo">Conteúdo</a>
-            <a class="nav-item nav-link" href="#junte">Junte-se a nós</a>
-            <a class="nav-item nav-link" href="#t3">Texto 3</a>
+            <a class="nav-item nav-link" href="#cards">Conteúdo</a>
+            <a class="nav-item nav-link" href="#formulário">Junte-se a nós</a>
+            <a class="nav-item nav-link" href="#sobre">Sobre</a>
             <!-- <div class="navbar-nav">
             </div> -->
         </nav>
@@ -74,10 +75,9 @@
         </div>
 
     </header>
-
-    <main class="app-main">
-
-        <section class="swiper-container contrastejs">
+    <main class="app-main contrastejs">
+        <!-- Cards -->
+        <section id="cards" class="swiper-container ">
             <h3>Alguns Instrumentos Músicais:</h3>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -129,32 +129,39 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </section>
-
-
-        <section id="formCadastro" class="content-main contrastejs">
-
-            <h1 id="t2">Seja um colaborador</h1>
-            <form action="GET" class="form-main contrastejs">
-                <label for="fNome"> Nome: </label>
-                <input type="text" id="fNome" name="txtNome" placeholder="Ex: Samaritano" required>
-                <br>
-                <label for="fTelefone"> Telefone: </label>
-                <input type="text" id="fTelefone" name="txtTelefone" placeholder="Ex: (XX)xxxxx-xxxx" required>
-                <br>
-                <label for="fEmail"> Email: </label>
-                <input type="text" id="fEmail" name="txtEmail" placeholder="Ex: nome@email.com" required>
-                <br>
-                <input type="button" value="Enviar">
-
-            </form>
+        <!-- /cards -->
+        <!-- formulario -->
+        <section id="formCadastro" class="content-main">
+            <div>
+                <h1>Seja um colaborador</h1>
+                <form action="GET" class="form-main ">
+                    <label for="fNome"> Nome: </label>
+                    <input type="text" id="fNome" name="txtNome" placeholder="Ex: Samaritano" required>
+                    <br>
+                    <label for="fTelefone"> Telefone: </label>
+                    <input type="text" id="fTelefone" name="txtTelefone" placeholder="Ex: (XX)xxxxx-xxxx" required>
+                    <br>
+                    <label for="fEmail"> Email: </label>
+                    <input type="text" id="fEmail" name="txtEmail" placeholder="Ex: nome@email.com" required>
+                    <br>
+                    <input type="button" value="Enviar">
+                </form>
+            </div>
         </section>
+        <!-- /formulario -->
+        <!-- Sobre -->
+        <section id="sobre">
+            <div class="content">
+                <h1>Sobre</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nulla vel asperiores, adipisci repellat
+                    dolor praesentium ratione cum eligendi reprehenderit soluta, quaerat illum aliquam, quas non
+                    possimus
+                    sed eveniet voluptatem?
+                </p>
+            </div>
 
-        <section class="contrastejs">
-            <h1 id="t3">Titulo3</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nulla vel asperiores, adipisci repellat
-                dolor praesentium ratione cum eligendi reprehenderit soluta, quaerat illum aliquam, quas non possimus
-                sed eveniet voluptatem?</p>
         </section>
+        <!-- /Sobre -->
     </main>
 
     <footer></footer>

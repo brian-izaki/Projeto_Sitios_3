@@ -6,14 +6,17 @@
   flex-direction: column;
 }
 
-.content{
-    display: grid;
-    grid-template-columns: 20px auto 20px 20px;
-    grid-template-rows: auto auto;
+.container{
+  display: grid;
+  grid-template-columns: 200px auto 200px ;
+  grid-template-rows: 100px auto;
 }
 
-.cards-main {
-  
-  padding: 30px;
-  
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50em;
+  text-align: justify;
 }

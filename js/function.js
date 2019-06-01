@@ -35,10 +35,9 @@ var swiper = new Swiper('.swiper-container', {
 $(document).ready(
     function(){
         let contador = 0;
-        $("#contraste").click(
-             
+        $("#contraste").click( 
             function(){
-
+            
                 if (contador == 0){
                     $(".contrastejs").addClass("formata");
                     contador++;
@@ -47,9 +46,19 @@ $(document).ready(
                     $(".contrastejs").removeClass("formata");
                     return contador = 0;
                 }
-            }
-            
-
-        )
-    }
-)
+            });
+        
+        $("#minusculo").click(
+            function(){
+                let elemento = $("body");
+                let fonte = elemento.css('font-size');
+                elemento.css("fontSize", parseInt(fonte) - 1);
+            });
+        $("#maiusculo").click(
+            function(){
+                let elemento = $("body");
+                let fonte = elemento.css('font-size');
+                elemento.css("fontSize", parseInt(fonte) + 1);
+            });
+        
+    })
