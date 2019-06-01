@@ -15,8 +15,15 @@
     <link rel="stylesheet" href="./css/objects/mainObjects.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.8.2-web/css/fontawesome.min.css">
 
     <title>Music Template</title>
+    <style>
+        .formata {
+            background-color: black !important;
+            color: white !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,14 +31,20 @@
         <section class="acessibilidade-header ">
             <div class="acessibilidade-atalhos">
                 <a class="none-decoration cor-acessivel" href="#menu"> Ir para menus </a>
-                <a class="none-decoration cor-acessivel" href="#"> Ir para opção de aumentar fonte</a>
-                <a class="none-decoration cor-acessivel" href="#"> Ir para opção de apresentar libras</a>
+                <a class="none-decoration cor-acessivel" href="#baixaVisao"> Ir para aumentar fonte</a>
+                <a class="none-decoration cor-acessivel" href="#"> Ir para alterar contraste</a>
             </div>
 
-            <div class="aumentarFonte">
-                <a href="#" id="minusculo"> <img class="imagem-letra" src="./images/letra-p.png"
+            <div id="baixaVisao" class="aumentarFonte">
+                <a href="#" id="minusculo"> <img class="imagem-letra" src="./images/DiminuirLetra.png"
                         alt="Diminuir fonte"></a>
-                <a href="#" id="maiusculo"> <img class="imagem-letra" src="./images/letra.png" alt="Aumentar fonte"></a>
+                <a href="#" id="maiusculo"> <img class="imagem-letra" src="./images/AumentarLetra.png"
+                        alt="Aumentar fonte"></a>
+            </div>
+            <div>
+                <a href="#" id="contraste">
+                    <img src="/images/adjust-contrast.png" alt="Alterar o contraste">
+                </a>
             </div>
 
 
@@ -39,21 +52,21 @@
         <!-- Nome do site -->
         <div class="text-center title-header">
 
-            <h1 id="home" class="_defined">Info Musics</h1>
+            <h1 id="home" class="_defined contrastejs">Info Musics</h1>
         </div>
         <!-- Barra de menus do site -->
         <!-- se quiser deixar algo no canto esquerdo utilizar o ml-auto -->
         <nav id="menu" class="navbar navbar-light justify-content-center bg-light">
-            <a class="nav-item navbar-brand" href="#home">Home</a>
-            <a class="nav-item nav-link" href="#conteúdo">Conteúdo</a>
-            <a class="nav-item nav-link" href="#junte">Junte-se a nós</a>
-            <a class="nav-item nav-link" href="#t3">Texto 3</a>
+            <a class="nav-item contrastejs navbar-brand" href="#home">Home</a>
+            <a class="nav-item contrastejs nav-link" href="#conteúdo">Conteúdo</a>
+            <a class="nav-item contrastejs nav-link" href="#junte">Junte-se a nós</a>
+            <a class="nav-item contrastejs nav-link" href="#t3">Texto 3</a>
             <!-- <div class="navbar-nav">
             </div> -->
         </nav>
         <!-- Texto no meio do header -->
         <div class="content-header">
-            <div class="text-header">
+            <div class="text-header contrastejs">
                 <h2>A Música está em todo lugar!</h2>
                 <p>A música oferece às paixões o meio de obter prazer delas.</p>
                 <p>- Friedrich Nietzsche</p>
@@ -64,100 +77,64 @@
 
     <main class="app-main">
 
-                <section class="swiper-container">
-                    <h3>Alguns Instrumentos Músicais:</h3>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="imgBx">
-                                <img src="./images/piano1.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <h3>John Doe<br><span>Web Designer</span></h3>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="imgBx">
-                                <img src="./images/piano2.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <h3>John Doe<br><span>Web Designer</span></h3>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="imgBx">
-                                <img src="./images/piano2.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <h3>John Doe<br><span>Web Designer</span></h3>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="imgBx">
-                                <img src="./images/piano3.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <h3>John Doe<br><span>Web Designer</span></h3>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="imgBx">
-                                <img src="./images/piano3.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <h3>John Doe<br><span>Web Designer</span></h3>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="imgBx">
-                                <img src="./images/piano3.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <h3>John Doe<br><span>Web Designer</span></h3>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="imgBx">
-                                <img src="./images/piano2.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <h3>John Doe<br><span>Web Designer</span></h3>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="imgBx">
-                                <img src="./images/violao1.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <h3>John Doe<br><span>Web Designer</span></h3>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="imgBx">
-                                <img src="./images/violino1.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <h3>John Doe<br><span>Web Designer</span></h3>
-                            </div>
-                        </div>
+        <section class="swiper-container contrastejs">
+            <h3>Alguns Instrumentos Músicais:</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="./images/piano1.jpg" alt="">
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </section>
+                    <div class="details">
+                        <h3>John Doe<br><span>Web Designer</span></h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="./images/piano2.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3>John Doe<br><span>Web Designer</span></h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="./images/piano3.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3>John Doe<br><span>Web Designer</span></h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="./images/piano2.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3>John Doe<br><span>Web Designer</span></h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="./images/violao1.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h3>John Doe<br><span>Web Designer</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
 
 
-        <section id="formCadastro" class="content-main">
+        <section id="formCadastro" class="content-main contrastejs">
 
             <h1 id="t2">Seja um colaborador</h1>
-            <form action="GET" class="form-main">
+            <form action="GET" class="form-main contrastejs">
                 <label for="fNome"> Nome: </label>
                 <input type="text" id="fNome" name="txtNome" placeholder="Ex: Samaritano" required>
                 <br>
@@ -172,7 +149,7 @@
             </form>
         </section>
 
-        <section>
+        <section class="contrastejs">
             <h1 id="t3">Titulo3</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nulla vel asperiores, adipisci repellat
                 dolor praesentium ratione cum eligendi reprehenderit soluta, quaerat illum aliquam, quas non possimus
@@ -181,10 +158,10 @@
     </main>
 
     <footer></footer>
-   <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/swiper.min.js"></script>
-<script src="./js/function.js"></script>
+    <script src="./js/function.js"></script>
 </body>
 <!--Commit-->
 
