@@ -31,3 +31,25 @@ var swiper = new Swiper('.swiper-container', {
         }
     } 
 });
+
+$(document).ready(
+    function(){
+        let contador = 0;
+        $("#contraste").click(
+             
+            function(){
+
+                if (contador == 0){
+                    $(".contrastejs").addClass("formata");
+                    contador++;
+                } 
+                else{
+                    $(".contrastejs").removeClass("formata");
+                    return contador = 0;
+                }
+            }
+            
+
+        )
+    }
+)
