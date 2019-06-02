@@ -10,16 +10,13 @@
     flex-direction: column;
 }
 
-.aumentarFonte{
-    
-}
-
 .template-header{
     background-image: url(../../images/partitura-fundo.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100vh;
 
 }
 
