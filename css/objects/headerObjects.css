@@ -5,4 +5,20 @@
 
 .text-header{
     color: #D3CDCE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+@media (max-width:500px){
+    .text-header{
+        color: #D3CDCE;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60%;
+    }
 }

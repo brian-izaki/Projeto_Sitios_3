@@ -10,6 +10,21 @@
     flex-direction: column;
 }
 
+@media (max-width:500px) {
+    .acessibilidade-header{
+        height: auto;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acessibilidade-atalhos{
+        display: flex;
+        flex-direction: column;
+    }
+}
 .template-header{
     background-image: url(../../images/partitura-fundo.jpg);
     background-attachment: fixed;
