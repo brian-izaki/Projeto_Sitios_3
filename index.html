@@ -58,11 +58,20 @@
         </div>
         <!-- Barra de menus do site -->
         <!-- se quiser deixar algo no canto esquerdo utilizar o ml-auto -->
-        <nav id="menu" class="navbar navbar-light justify-content-center bg-light contrastejs">
-            <a class="nav-item navbar-brand" href="#home">Home</a>
-            <a class="nav-item nav-link" href="#cards">Conteúdo</a>
-            <a class="nav-item nav-link" href="#formCadastro">Seja um colaborador</a>
-            <a class="nav-item nav-link" href="#sobre">Sobre</a>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light contrastejs">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span> <img src="./images/optionResponsivo.png" alt="Barra de opções para acessar os menus no modo responsivo"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse justify-content-center contrastejs">
+                <div class="navbar-nav font-weight-bold">
+                    <a class="nav-item nav-link text-info" href="#home">Home</a>
+                    <a class="nav-item nav-link text-info" href="#cards">Conteúdo</a>
+                    <a class="nav-item nav-link text-info" href="#formCadastro">Seja um colaborador</a>
+                    <a class="nav-item nav-link text-info" href="#sobre">Sobre</a>
+                </div>
+            </div>
+
             <!-- <div class="navbar-nav">
             </div> -->
         </nav>
@@ -137,22 +146,27 @@
                 <h1>Seja um colaborador</h1>
                 <form method="GET" class="form-main" onsubmit="return validar();">
 
-                <label for="fNome"> Nome: </label>
-                <input type="text" id="fNome" name="txtNome" maxlength="50" placeholder="Ex: Samaritano" required>
-                <p id="inpNome"></p>
-                <br>
+                    <label for="fNome"> Nome: </label>
+                    <input type="text" id="fNome" name="txtNome" maxlength="50" placeholder="Ex: Samaritano" required>
+                    <p id="inpNome"></p>
+                    <br>
 
-                <label for="fTelefone"> Telefone: </label>
-                <input type="text" id="fTelefone" name="txtTelefone" maxlength="11" placeholder="Ex: (XX)xxxxx-xxxx" required>
-                <p id="inpTel"></p>
-                <br>
+                    <label for="fTelefone"> Telefone: </label>
+                    <input type="text" id="fTelefone" name="txtTelefone" maxlength="11" placeholder="Ex: (XX)xxxxx-xxxx"
+                        required>
+                    <p id="inpTel"></p>
+                    <br>
 
-                <label for="fEmail"> Email: </label>
-                <input type="text" id="fEmail" name="txtEmail" maxlength="60" placeholder="Ex: nome@email.com" required>
-                <p id="inpEmail"></p>
-                <br>
-                    <button type="submit" name="btnEnviar">Enviar</button>
-                    <button type="reset" name="btnCancelar">Apagar</button>
+                    <label for="fEmail"> Email: </label>
+                    <input type="text" id="fEmail" name="txtEmail" maxlength="60" placeholder="Ex: nome@email.com"
+                        required>
+                    <p id="inpEmail"></p>
+                    <br>
+                    <div>
+                        <button type="submit" name="btnEnviar">Enviar</button>
+                        <button type="reset" name="btnCancelar">Apagar</button>
+                    </div>
+
                 </form>
             </div>
         </section>
