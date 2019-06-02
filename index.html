@@ -60,7 +60,7 @@
         <nav id="menu" class="navbar navbar-light justify-content-center bg-light contrastejs">
             <a class="nav-item navbar-brand" href="#home">Home</a>
             <a class="nav-item nav-link" href="#cards">Conteúdo</a>
-            <a class="nav-item nav-link" href="#formulário">Junte-se a nós</a>
+            <a class="nav-item nav-link" href="#formCadastro">Seja um colaborador</a>
             <a class="nav-item nav-link" href="#sobre">Sobre</a>
             <!-- <div class="navbar-nav">
             </div> -->
@@ -134,16 +134,23 @@
         <section id="formCadastro" class="form-main">
             <div>
                 <h1>Seja um colaborador</h1>
-                <form action="GET" class="form-main" onsubmit="return validar();">
+                <form method="GET" class="form-main" onsubmit="return validar();">
+
                 <label for="fNome"> Nome: </label>
                 <input type="text" id="fNome" name="txtNome" maxlength="50" placeholder="Ex: Samaritano" required>
+                <p id="inpNome"></p>
                 <br>
+
                 <label for="fTelefone"> Telefone: </label>
                 <input type="text" id="fTelefone" name="txtTelefone" maxlength="11" placeholder="Ex: (XX)xxxxx-xxxx" required>
+                <p id="inpTel"></p>
                 <br>
+
                 <label for="fEmail"> Email: </label>
                 <input type="text" id="fEmail" name="txtEmail" maxlength="60" placeholder="Ex: nome@email.com" required>
+                <p id="inpEmail"></p>
                 <br>
+
                 <button type="submit" name="btnEnviar">Enviar</button>
 
                 </form>
