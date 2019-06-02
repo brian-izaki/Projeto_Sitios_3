@@ -28,3 +28,56 @@
   width: 60vw;
   text-align: justify;
 }
+
+/* adicionando loading da pagina */
+.is-hide{
+  display: none;
+}
+
+.loading{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+
+}
+
+.loading::before{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin: -15px 0 0 -15px;
+  background: white; 
+
+}
+
+.loading::after{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 32px;
+  width: 32px;
+  border-radius: 20px;
+  margin: -10px 0 0 -10px;
+  border: 4px solid red;
+  border-right: 4px solid white;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg)
+  }
+}

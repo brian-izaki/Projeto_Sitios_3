@@ -60,8 +60,22 @@ $(document).ready(
                 let fonte = elemento.css('font-size');
                 elemento.css("fontSize", parseInt(fonte) + 1);
             });
-        //adicionando ajax
-        
+
+        //json
+        $("form").submit(
+            function(){
+                $("form").append("<p id = 'formato'> </p>");
+                let objeto = {
+                    "nome" : $("#fNome").val(),
+                    "Telefone" : $("#fTelefone").val(),
+                    "Email" : $("#fEmail").val()
+                    // "nome": $('#tNome').val(),  
+                };
+                let html = JSON.stringify(objeto, 0, 4);
+                $("#formato").text(html);
+                return false;
+            }
+        )
     })
 
     //formulario
