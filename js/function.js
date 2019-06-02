@@ -70,12 +70,16 @@ $(document).ready(
         $("#fTelefone").blur(
             function () {
                 let tel = $("#fTelefone").val();
-                let telNovo = "";
+                let telNovo = "(";
                 for (let x = 0; x <= tel.length; x++) {
                     telNovo += tel.charAt(x);
-                    if (x == 4) {
-                        telNovo += "-";
+                    if (x == 1){
+                        telNovo += ")";
                     }
+                    else
+                    if (x == 6) {
+                        telNovo += "-";
+                    };
                 }
                 $("#fTelefone").val(telNovo);
             }
@@ -89,7 +93,7 @@ function espacoBranco(objeto) {
     if (maskNome.test(objeto.value)) {
         return true;
     }
-    alert("Campo em branco ");
+    alert("Preencha o campo do nome corretamente");
     return false;
 }
 
@@ -102,11 +106,11 @@ function formatoEmail(objeto) {
 }
 
 function formatoTel(objeto) {
-    let maskTel = /^[0-9]{5}-[0-9]{4}$/;
+    let maskTel = /^\(\d{2}\)[0-9]{5}-[0-9]{4}$/;
     if (maskTel.test(objeto.value)) {
         return true;
     }
-    alert("Formato inválido");
+    alert("Telefone inválido!");
     return false;
 }
 
@@ -114,13 +118,15 @@ function validar() {
     let n = document.getElementById("fNome");
     let e = document.getElementById("fEmail");
     let t = document.getElementById("fTelefone");
+    let armazena = "";
     if (espacoBranco(n) != true) {
-        return false;
+        armazena += false;
     } else if (espacoBranco(e) != true) {
-        return false;
+        armazena += false;
     } else if (formatoEmail(e) != true) {
-        return false;
+        armazena += false;
     } else if (formatoTel(t) != true) {
-        return false;
+        armazena += false;
     }
+    return armazena;
 }
