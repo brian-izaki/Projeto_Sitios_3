@@ -12,11 +12,19 @@
   grid-template-rows: 100px auto;
 }
 
+.form-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
 .content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50em;
+  width: 60vw;
   text-align: justify;
 }

@@ -131,18 +131,18 @@
         </section>
         <!-- /cards -->
         <!-- formulario -->
-        <section id="formCadastro" class="content-main">
+        <section id="formCadastro" class="form-main">
             <div>
                 <h1>Seja um colaborador</h1>
                 <form action="GET" class="form-main" onsubmit="return validar();">
                 <label for="fNome"> Nome: </label>
-                <input type="text" id="fNome" name="txtNome" placeholder="Ex: Samaritano" required>
+                <input type="text" id="fNome" name="txtNome" maxlength="50" placeholder="Ex: Samaritano" required>
                 <br>
                 <label for="fTelefone"> Telefone: </label>
-                <input type="text" id="fTelefone" name="txtTelefone" placeholder="Ex: (XX)xxxxx-xxxx" required>
+                <input type="text" id="fTelefone" name="txtTelefone" maxlength="11" placeholder="Ex: (XX)xxxxx-xxxx" required>
                 <br>
                 <label for="fEmail"> Email: </label>
-                <input type="text" id="fEmail" name="txtEmail" placeholder="Ex: nome@email.com" required>
+                <input type="text" id="fEmail" name="txtEmail" maxlength="60" placeholder="Ex: nome@email.com" required>
                 <br>
                 <button type="submit" name="btnEnviar">Enviar</button>
 
