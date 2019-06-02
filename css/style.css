@@ -149,6 +149,11 @@ a{
 
 /*Responsividade*/
 @media(max-width: 720px){
+    .text-card{
+        text-align: center;
+        font-size: 30px;
+    }
+
     .footer-social-icons ul li{
         display: inline-block;
         width: 50px;
