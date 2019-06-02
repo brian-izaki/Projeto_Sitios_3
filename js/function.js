@@ -75,7 +75,10 @@ $(document).ready(
                 $("#formato").text(html);
                 return false;
             }
-        )
+        );
+
+        // ajax
+        
     })
 
     //formulario
