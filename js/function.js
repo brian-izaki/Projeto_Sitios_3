@@ -62,3 +62,65 @@ $(document).ready(
             });
         
     })
+
+    //formulario
+//Mascara//
+$(document).ready(
+    function () {
+        $("#fTelefone").blur(
+            function () {
+                let tel = $("#fTelefone").val();
+                let telNovo = "";
+                for (let x = 0; x <= tel.length; x++) {
+                    telNovo += tel.charAt(x);
+                    if (x == 4) {
+                        telNovo += "-";
+                    }
+                }
+                $("#fTelefone").val(telNovo);
+            }
+        );
+    }
+)
+
+//Validar
+function espacoBranco(objeto) {
+    let maskNome = /^[A-z]/;
+    if (maskNome.test(objeto.value)) {
+        return true;
+    }
+    alert("Campo em branco ");
+    return false;
+}
+
+function formatoEmail(objeto) {
+    if (objeto.value.includes("@gmail.com")) {
+        return true;
+    }
+    alert("Formato de E-mail incompativel")
+    return false;
+}
+
+function formatoTel(objeto) {
+    let maskTel = /^[0-9]{5}-[0-9]{4}$/;
+    if (maskTel.test(objeto.value)) {
+        return true;
+    }
+    alert("Formato inválido");
+    return false;
+}
+
+function validar() {
+    let n = document.getElementById("fNome");
+    let e = document.getElementById("fEmail");
+    let t = document.getElementById("fTelefone");
+    if (espacoBranco(n) != true) {
+        return false;
+    } else if (espacoBranco(e) != true) {
+        return false;
+    } else if (formatoEmail(e) != true) {
+        return false;
+    } else if (formatoTel(t) != true) {
+        return false;
+    }
+}
