@@ -60,6 +60,7 @@ $(document).ready(
                 let fonte = elemento.css('font-size');
                 elemento.css("fontSize", parseInt(fonte) + 1);
             });
+        //adicionando ajax
         
     })
 
@@ -130,3 +131,4 @@ function validar() {
     }
     return armazena;
 }
+
